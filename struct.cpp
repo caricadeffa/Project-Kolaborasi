@@ -6,6 +6,8 @@ using namespace std;
 		int student_id;
 		float midterm_score; 
 		float finalexam_score;	
+		float totalquiz_score;
+		float totaltask_score;
 	};
 	
 	//Inisialisasi 
@@ -28,6 +30,10 @@ int main (){
 		cin>>seluruhnya[i].midterm_score;
 		cout<<"Masukkan Nilai Ujian Akhir: ";
 		cin>>seluruhnya[i].finalexam_score;
+		cout<<"Masukkan Total Nilai Kuis: ";
+		cin>>seluruhnya[i].totalquiz_score;
+		cout<<"Masukkan Total Nilai Tugas: ";
+		cin<<seluruhnya[i].totaltask_score;
 		
 		cout<<endl;
 	}
@@ -43,7 +49,7 @@ cout<<"===HASIL==="<<endl;
 for (int i=0; i<n; i++){	
 cout<<"ID Mahasiswa: "<<seluruhnya[i].student_id;
 cout<<endl;
-cout<<"Rata-Rata Nilai: "<<(seluruhnya[i].midterm_score+seluruhnya[i].finalexam_score)/2;
+cout<<"Rata-Rata Nilai: "<<(seluruhnya[i].midterm_score+seluruhnya[i].finalexam_score +seluruhnya[i].totalquiz_score+seluruhnya[i].totaltask_score)/4;
 cout<<endl<<endl;}
 
 cout<<endl;
